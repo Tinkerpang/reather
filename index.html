@@ -12,8 +12,11 @@
   <body>
     <div class="weather-app">
     <header>
-        <form class="search-form">
-            <input type="search" placeholder="Search for city..." required class="search-form-input" />
+        <form class="search-form" id = "search-form">
+            <input type="search" placeholder="Search for city..." 
+            required id ="search-form-input"
+             class="search-form-input" />
+
             <input type="submit"  value="Search" class="search-form-button"/>
 
         </form>
@@ -23,7 +26,7 @@
         <div class = "weather-app-data">
 <div>
     
-    <h1 class="weather-app-city">Paris</h1>
+    <h1 class="weather-app-city" id="city">Paris</h1>
     <p class= "weather-app-details">
         Tuesday 14:49, scattered clouds
     </br>
@@ -31,7 +34,7 @@
     </p>
 </div>
 
-    <div class="weather-app-temperature-container" </div>
+    <div class="weather-app-temperature-container" ></div>
     <div class="weather-app-icon">🌤️ </div> 
     <div class=" weather-app-temperature">12 </div>
     <div class="weather-app-unit">C°</div>
@@ -49,6 +52,8 @@
         on Netlify
       </a>
     </footer>
+    
 </div>
+<script src="src/index.js"></script>
   </body>
 </html>
